@@ -2,6 +2,7 @@
 hooks/
 node_modules/
 platforms/
+App_Resources/
 
 # NativeScript Template
 *.js.map
@@ -26,6 +27,7 @@ tmp/
 typings/
 
 # Visual Studio Code
+vscode/
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json

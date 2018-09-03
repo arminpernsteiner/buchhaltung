@@ -1,0 +1,18 @@
+<ActionBar class="action-bar">
+    <Label class="action-bar-title" text="Neue Buchung"></Label>
+    <NavigationButton android.systemIcon="ic_menu_back" text="Back to ActionBar" (tap)="goBack()"></NavigationButton>
+</ActionBar>
+
+<StackLayout class="form">
+    <RadDataForm [source]="entry" tkExampleTitle tkToggleNavButton>
+        <TKEntityProperty tkDataFormProperty name="date" displayName="Date" index="0"></TKEntityProperty>
+        <TKEntityProperty tkDataFormProperty name="credit" displayName="Creditaccount" index="1" valuesProvider="something, something">
+            <TKPropertyEditor tkEntityPropertyEditor type="Picker"></TKPropertyEditor>
+        </TKEntityProperty>
+        <TKEntityProperty tkDataFormProperty name="debit" displayName="Debitaccount" index="2" valuesProvider="something, something">
+            <TKPropertyEditor tkEntityPropertyEditor type="Picker"></TKPropertyEditor>
+        </TKEntityProperty>
+        <TKEntityProperty tkDataFormProperty name="value" displayName="Value" index="3" type="number"></TKEntityProperty>
+        <TKEntityProperty tkDataFormProperty name="description" displayName="Description" index="4"></TKEntityProperty>
+    </RadDataForm>
+</StackLayout>

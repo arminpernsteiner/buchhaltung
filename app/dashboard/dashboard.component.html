@@ -1,0 +1,13 @@
+<ActionBar class="action-bar">
+    <Label class="action-bar-title" text="Dashboard"></Label>
+    <ActionItem text="Neue Buchung" ios.position="right" android.position="popup" [nsRouterLink]="['/newEntry']"></ActionItem>
+    <ActionItem text="Item" ios.position="right" android.position="popup" [nsRouterLink]="['/second']"></ActionItem>
+</ActionBar>
+
+<GridLayout class="page">
+    <ListView [items]="personList">
+        <template let-item="item">
+            <Label [text]="item.firstname + ' ' + item.lastname"></Label>
+        </template>
+    </ListView>
+</GridLayout>
